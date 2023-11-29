@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="45" width="65">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M0-9h64v64H0z"/>
+    <g transform="translate(1 1)">
+      <path d="M7.033 4.981h48.642v29.888H7.033z" fill="#204ECF" opacity=".1"/>
+      <circle cx="31.353" cy="2.344" fill="#204ECF" fill-rule="nonzero" r="1"/>
+      <path d="M4.981 35.749V4.359C4.981 1.953 7.005 0 9.502 0h43.703c2.496 0 4.52 1.952 4.52 4.36v31.389M36.37 37.507v1.172H26.337v-1.172H0v.586c0 2.59 2.246 4.688 5.017 4.688H57.69c2.771 0 5.017-2.099 5.017-4.688v-.586H36.37z" stroke="#204ECF" stroke-linecap="square"/>
+    </g>
+  </g>
+</svg>

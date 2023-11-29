@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="17" width="62">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M-1-24h64v64H-1z"/>
+    <g>
+      <circle cx="8.068" cy="8.068" r="7.568" stroke="#204ECF"/>
+      <circle cx="31" cy="8.068" r="7.568" stroke="#204ECF"/>
+      <circle cx="53.932" cy="8.068" r="7.568" stroke="#204ECF"/>
+      <circle cx="8.068" cy="8.068" fill="#204ECF" opacity=".1" r="5.521"/>
+      <circle cx="31" cy="8.068" fill="#204ECF" opacity=".1" r="5.521"/>
+      <circle cx="53.932" cy="8.068" fill="#204ECF" opacity=".1" r="5.521"/>
+    </g>
+  </g>
+</svg>
