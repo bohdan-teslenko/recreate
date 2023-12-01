@@ -12,7 +12,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__left">
-          <!-- <div class="header__hamburger__dropdown">
+          <!-- <div class="header__hamburger-dropdown header--remove ">
           <button class="header__hamburger">
             <img
               src="images/hamburger.png"
@@ -215,16 +215,19 @@
           /></a>
           <h1 class="header__title">Designers</h1>
         </div>
-        <div class="header__center">
+        <div class="header__center header--remove">
           <ul class="header__menu">
             <li class="header__item">
               <a href="" class="header__link">Top 3 %</a>
+              <div class="header__underline"></div>
             </li>
             <li class="header__item">
               <a href="" class="header__link">Why</a>
+              <div class="header__underline"></div>
             </li>
             <li class="header__item">
               <a href="" class="header__link">Clients</a>
+              <div class="header__underline"></div>
             </li>
             <li class="header__item header__item--arrow">
               <button class="header__link header__link--button">
@@ -264,27 +267,34 @@
             </li>
             <li class="header__item">
               <a href="" class="header__link">Community</a>
+              <div class="header__underline"></div>
             </li>
             <li class="header__item">
               <a href="" class="header__link">Blog</a>
+              <div class="header__underline"></div>
             </li>
             <li class="header__item">
               <a href="" class="header__link">About Us</a>
+              <div class="header__underline"></div>
             </li>
           </ul>
         </div>
         <div class="header__right">
           <ul class="right__list">
             <li class="right__item">
-              <a href="" class="header__link">Apply as a Designer</a>
+              <a href="" class="header__link header--remove"
+                >Apply as a Designer</a
+              >
             </li>
             <li class="right__item">
-              <a href="" class="button header__link header__link--white"
+              <a
+                href=""
+                class="button header__link header__link--white header--remove-hire"
                 >Hire a Designer</a
               >
             </li>
             <li class="right__item">
-              <a href="" class="header__link">Log in</a>
+              <a href="" class="header__link header--remove">Log in</a>
             </li>
             <li class="right__item right__hamburger">
               <button class="header__hamburger">
@@ -293,6 +303,87 @@
                   alt="hamburger-icon"
                   class="header__hamburger-icon" />
               </button>
+              <!-- <div class="right-hamburger">
+                <ul class="right-hamburger__menu">
+                  <li class="right-hamburger__item">
+                    <a href="" class="right-hamburger__link">Top 3 %</a>
+                  </li>
+                  <li class="right-hamburger__item">
+                    <a href="" class="right-hamburger__link">Why</a>
+                  </li>
+                  <li class="right-hamburger__item">
+                    <a href="" class="right-hamburger__link">Clients</a>
+                  </li>
+                  <li class="right-hamburger__item">
+                    <button class="right-hamburger__button">Industries</button>
+                    <ul class="right-hamburger__dropdown">
+                      <li class="right-hamburger__dropdown-item">
+                        <a href="" class="right-hamburger__dropdown-link"
+                          >Healthcare and Life Sciences</a
+                        >
+                      </li>
+                      <li class="right-hamburger__dropdown-item">
+                        <a href="" class="right-hamburger__dropdown-link"
+                          >Consumer Products and Services</a
+                        >
+                      </li>
+                      <li class="right-hamburger__dropdown-item">
+                        <a href="" class="right-hamburger__dropdown-link"
+                          >Financial Services</a
+                        >
+                      </li>
+                      <li class="right-hamburger__dropdown-item">
+                        <a href="" class="right-hamburger__dropdown-link"
+                          >Industrials</a
+                        >
+                      </li>
+                      <li class="right-hamburger__dropdown-item">
+                        <a href="" class="right-hamburger__dropdown-link"
+                          >Communications, Media, and Entertainment</a
+                        >
+                      </li>
+                      <li class="right-hamburger__dropdown-item">
+                        <a href="" class="right-hamburger__dropdown-link"
+                          >Technology</a
+                        >
+                      </li>
+                      <li class="right-hamburger__dropdown-item">
+                        <a href="" class="right-hamburger__dropdown-link"
+                          >Automotive</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="right-hamburger__item">
+                    <a href="" class="right-hamburger__link">Community</a>
+                  </li>
+                  <li class="right-hamburger__item">
+                    <a href="" class="right-hamburger__link">Blog</a>
+                  </li>
+                  <li class="right-hamburger__item">
+                    <a href="" class="right-hamburger__link">About Us</a>
+                  </li>
+                </ul>
+                <div class="hamburger-nav">
+                  <ul class="hamburger-nav__list">
+                    <li class="hamburger-nav__item">
+                      <a href="" class="hamburger-nav__link"
+                        >Apply as a Designer</a
+                      >
+                    </li>
+                    <li class="hamburger-nav__item">
+                      <a
+                        href=""
+                        class="button hamburger-nav__link hamburger-nav__link--center"
+                        >Hire a Designer</a
+                      >
+                    </li>
+                    <li class="hamburger-nav__item">
+                      <a href="" class="hamburger-nav__link">Log in</a>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
             </li>
           </ul>
         </div>
@@ -1255,7 +1346,7 @@
           </p>
         </div>
       </section>
-      <!-- <section class="freelance-devs">
+      <section class="freelance-devs">
         <h2 class="freelance-devs__title sign-up__title">
           Need to find a cross-functional team? <br />
           See top freelance developers profiles.
@@ -1263,10 +1354,12 @@
         <div class="freelance-devs__container">
           <div class="freelance-devs__item">
             <a href="" class="freelance-devs__item-link">
-              <img
-                src="images/freelance-devs_1.svg"
-                alt="laptop icon"
-                class="freelance-devs__logo" />
+              <div class="freelance-devs__wrapper">
+                <img
+                  src="images/freelance-devs_1.svg"
+                  alt="laptop icon"
+                  class="freelance-devs__logo" />
+              </div>
               <p class="freelance-devs__text">Web Developers</p>
               <img
                 src="images/designers__arrow.svg"
@@ -1276,10 +1369,12 @@
           </div>
           <div class="freelance-devs__item">
             <a href="" class="freelance-devs__item-link">
-              <img
-                src="images/freelance-devs_2.svg"
-                alt="laptop icon"
-                class="freelance-devs__logo" />
+              <div class="freelance-devs__wrapper">
+                <img
+                  src="images/freelance-devs_2.svg"
+                  alt="laptop icon"
+                  class="freelance-devs__logo" />
+              </div>
               <p class="freelance-devs__text">Mobile Developers</p>
               <img
                 src="images/designers__arrow.svg"
@@ -1289,10 +1384,12 @@
           </div>
           <div class="freelance-devs__item">
             <a href="" class="freelance-devs__item-link">
-              <img
-                src="images/freelance-devs_3.svg"
-                alt="laptop icon"
-                class="freelance-devs__logo" />
+              <div class="freelance-devs__wrapper">
+                <img
+                  src="images/freelance-devs_3.svg"
+                  alt="laptop icon"
+                  class="freelance-devs__logo" />
+              </div>
               <p class="freelance-devs__text">See More Developers</p>
               <img
                 src="images/designers__arrow.svg"
@@ -1484,7 +1581,11 @@
             </a>
           </div>
         </div>
-        <a href="" class="trending__more-articles">More Design Articles</a>
+        <div class="trending__more-articles">
+          <a href="" class="trending__more-articles-link"
+            >More Design Articles</a
+          >
+        </div>
       </section>
       <section class="jobs">
         <div class="jobs__container">
@@ -1640,11 +1741,13 @@
         </div>
       </section>
       <aside class="high-demand sign-up">
-        <h3 class="sign-up__title title">Top designers are in high demand.</h3>
+        <h3 class="sign-up__title title high-demand__title">
+          Top designers are in high demand.
+        </h3>
         <div class="sign-up__div">
           <a href="" class="sign-up__link button">Start hiring</a>
         </div>
-      </aside> -->
+      </aside>
     </main>
     <footer class="footer">
       <div class="footer__container">
