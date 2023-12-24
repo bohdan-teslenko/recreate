@@ -118,6 +118,7 @@ li {
     background-color: transparent;
     border: none;
   }
+ 
   &__hamburger-icon {
     height: 2rem;
     padding-bottom: 0.5rem;
@@ -203,7 +204,6 @@ li {
     }
   }
 }
-
 .right {
   &__list {
     display: flex;
@@ -214,18 +214,42 @@ li {
 // Dropdown left hamburger menu styling 
 // Need to use JS for the botton.
 .header {
+  position: relative;
   &__hamburger {
-
+    &-left {
+      background-color: transparent;
+      border: none;
+      padding-right: 1rem;
+      cursor: pointer;
+      padding-top: 0.4rem;
+    }
+    
     &-container {
-   
-      width: 450px;
+      position: absolute;
+       width: 450px;
        display: flex;
        flex-direction: column;
        padding: 1.5rem;
+       background-color: white;
+       left: 0;
+       max-height:100vh;
+       overflow-y: auto;
+       top: 0;
+       z-index: 1000;
+       display: none;
+      
     }
   }
 }
-
+.hamburger__logo-close {
+  height: 1.3rem;
+  position: relative;
+  top: 1.2rem;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 .hamburger {
   &__line {
 width: 500px;
@@ -239,7 +263,10 @@ background-color: #d6d6d6;
     width: auto;
     &-container {
       padding-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
     }
+    
   }
   &__title {
     font-size: 0.9rem;
@@ -376,7 +403,17 @@ background-color: #d6d6d6;
 // Right hamburger 
 /// Use Javascript for styling
 
+.header__hamburger {
+  cursor: pointer;
+}
+
 .right-hamburger {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+
   &__menu {
     display: flex;
     flex-direction: column;
@@ -384,19 +421,23 @@ background-color: #d6d6d6;
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    
+    text-align: center;
+   
+   
   }
   &__item {
     border-bottom: 1px solid rgb(235, 235, 235);
     padding: 0.5rem;
   }
+  
   &__dropdown {
-        // display: none;
+   display: none;
     &-link {
       color: black;
-      font-size: 1.1rem;
-      line-height: 2.5rem;
+      font-size: 0.9rem;
+      line-height: 1.5rem;
       padding-left: 1.5rem;
+      
       &:hover {
         color: var(--primary);
       }
@@ -404,11 +445,13 @@ background-color: #d6d6d6;
   }
   &__link {
     color: black;
-    font-size: 1.1rem;
-    line-height: 2.5rem;
+    font-size: 0.8rem;
+    line-height: 2.2rem;
     &:hover {
       color: var(--primary);
     }
+ 
+  
   }
  &__button {
   background-color: transparent;
@@ -417,6 +460,7 @@ background-color: #d6d6d6;
   color: black;
   font-size: 1.1rem;
   line-height: 2.5rem;
+  
   &:hover {
     color: var(--primary);
   }
@@ -448,11 +492,14 @@ background-color: #d6d6d6;
     display: block;
     font-size: 1.1rem;
     color: black;
+      background-color: white;
+    
     &:hover {
       color: var(--blue);
     }
     &--center {
       color: white;
+      background-color: var(--dark-green);
     
     }
   }
@@ -1742,7 +1789,9 @@ font-weight: 700;
    position: relative;
    top: 0.6rem;
    right: 0.5rem;
+   
   }
+ 
   &__container:hover &__arrow {
     border-top: 15px solid var(--blue);
   }
@@ -1769,7 +1818,7 @@ cursor: pointer;
       font-size: 1.1rem;
     }
   }
-  .faq__text {
+  &__text {
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 300;
@@ -1779,11 +1828,10 @@ cursor: pointer;
       font-size: 1rem;
       line-height: 1.5rem;
     }
-    // display: none;  
-  /// Style with JavaScript
-  /// Make text appear when clicking the botton
+    display: none; 
   }
 }
+
 .freelance-devs {
 width: 90%;
 margin: 0 auto 15vh auto;
@@ -2331,4 +2379,36 @@ align-items: center;
   }
 }
 }
+}
+.video-title{
+  background-color: var(--primary);
+  width: 100%;
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+.video-container{
+  position: absolute;
+  display: none;
+  height: 100vh;
+  top: 4vh;
+  left: 40vh;
+  z-index: 1000000;
+  background-color: var(--primary);
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.video-text {
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+}
+.video-close {
+  position: absolute;
+  top: 1.3rem;
+  cursor: pointer;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 0.2rem;
+
 }
